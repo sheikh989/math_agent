@@ -1,0 +1,4 @@
+crewai[tools]>=0.148.0,<1.0.0
+pyyaml
+openai
+pydantic

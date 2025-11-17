@@ -1,0 +1,35 @@
+{
+  "questions": [
+    {
+      "raw_text": "A sells an item to B at 20 % profit.\nB sells it to C at 10 % loss.\nC pays ₹ 594.\nFind A’s cost price.",
+      "question_type": "profit_loss",
+      "topic": "Profit Loss",
+      "key_data": {
+        "numbers": [
+          20.0,
+          10.0,
+          594.0,
+          1.2,
+          1.2,
+          0.9,
+          1.08,
+          1.08,
+          594.0,
+          594.0,
+          1.08,
+          550.0,
+          550.0
+        ],
+        "has_percentage": true,
+        "has_currency": true,
+        "profit_mentioned": true,
+        "loss_mentioned": true,
+        "discount_mentioned": false
+      },
+      "solution_steps": [
+        "A’s SP = 1.20 x\nB’s SP = 1.20 x × 0.90 = 1.08 x\nGiven 1.08 x = 594 → x = 594 ÷ 1.08 = 550\nAnswer → A’s Cost Price = ₹ 550"
+      ],
+      "answer": "A’s Cost Price = ₹ 550"
+    }
+  ]
+}

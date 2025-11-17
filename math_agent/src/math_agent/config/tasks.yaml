@@ -1,0 +1,64 @@
+task_1_extract_features:
+  description: >
+    Read the following question and extract:
+    - raw numbers
+    - percentages
+    - rupee values
+    - increases/decreases
+    - profit/loss indicators
+    - whether markup/discount occurs
+    - question type
+    You MUST call question_auto_extractor_tool(question).
+
+    {question}
+
+  expected_output: >
+    ONLY return valid JSON produced by question_auto_extractor_tool.
+    No text outside JSON.
+
+  agent: question_automation_agent
+  tools:
+    - question_auto_extractor_tool
+
+task_2_build_structured_json:
+  description: >
+    Take the JSON from Task 1 and convert it into a final structured JSON containing:
+    - values
+    - variables
+    - equations
+    - required_output
+    - raw_question
+    You MUST call json_structuring_tool(previous_json).
+
+  expected_output: >
+    Return ONLY valid JSON from json_structuring_tool.
+
+  agent: json_converter_agent
+  tools:
+    - json_structuring_tool
+
+task_3_solve_math:
+  description: >
+    Take the JSON from Task 2 and solve the math problem step-by-step.
+    Use deterministic algebra first, then fallback to GPT if needed.
+    You MUST call generic_math_solver_tool(structured_json).
+
+  expected_output: >
+    ONLY return JSON with solution_template and final_answer.
+
+  agent: math_solver_agent
+  tools:
+    - generic_math_solver_tool
+
+task_4_visual_formatter:
+  description: >
+    Take the solved JSON from Task 3 and generate a clean, formatted,
+    human-friendly explanation.
+    You MUST call visual_formatter_tool(solved_json).
+
+  expected_output: >
+    ONLY return formatted markdown text (no JSON).
+
+  agent: visual_formatter_agent
+  tools:
+    - visual_formatter_tool

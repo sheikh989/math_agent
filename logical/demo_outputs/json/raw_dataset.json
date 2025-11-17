@@ -1,0 +1,89 @@
+{
+  "questions": [
+    {
+      "raw_text": "A shopkeeper sells a book at a profit of 10%. Later, he reduces the cost price by 4%\nand increases the selling price by ₹6. As a result, his profit percentage becomes\n18.75% (or 3/16). Find the original cost price of the book.",
+      "question_type": "profit_loss",
+      "topic": "Profit Loss",
+      "key_data": {
+        "numbers": [
+          10.0,
+          4.0,
+          6.0,
+          18.75,
+          3.0,
+          16.0,
+          10.0,
+          1.0,
+          1.1,
+          0.96,
+          1.1,
+          6.0,
+          18.75,
+          3.0,
+          16.0,
+          1.1,
+          6.0,
+          0.96,
+          30.96,
+          16.0,
+          150.0
+        ],
+        "has_percentage": true,
+        "has_currency": true,
+        "profit_mentioned": true,
+        "loss_mentioned": false,
+        "discount_mentioned": false
+      },
+      "solution_steps": [
+        "Given:",
+        "Original profit = 10% → SP1 = 1.10x",
+        "New CP = 0.96x",
+        "New SP = 1.10x + 6",
+        "New Profit% = 18.75% = 3/16\nSolving gives: (1.10x + 6) - 0.96x = 30.96x 16\nx = ₹150"
+      ],
+      "answer": "0.96"
+    },
+    {
+      "raw_text": "A trader marks an article 40% above its cost price.\nHe allows a 10% discount on the marked price and still earns a profit of ₹36.\nFind the cost price of the article.",
+      "question_type": "profit_loss",
+      "topic": "Profit Loss",
+      "key_data": {
+        "numbers": [
+          40.0,
+          10.0,
+          36.0,
+          1.0,
+          1.4,
+          2.0,
+          10.0,
+          1.4,
+          0.9,
+          1.26,
+          3.0,
+          1.26,
+          0.26,
+          36.0,
+          0.26,
+          36.0,
+          36.0,
+          0.26,
+          138.46,
+          138.46
+        ],
+        "has_percentage": true,
+        "has_currency": true,
+        "profit_mentioned": true,
+        "loss_mentioned": false,
+        "discount_mentioned": true
+      },
+      "solution_steps": [
+        "Let the cost price = ₹ x",
+        "Marked Price = 1.40 x",
+        "After 10 % discount → Selling Price = 1.40x X 0.90 = 1.26x",
+        "Profit = SP − CP = 1.26x − x = 0.26x\nGiven profit = ₹ 36",
+        "26x = 36\n=> x = 36/0.26 ≈ 138.46\nAnswer → Cost Price ≈ ₹ 138.46"
+      ],
+      "answer": "Cost Price ≈ ₹ 138.46"
+    }
+  ]
+}
