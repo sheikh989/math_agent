@@ -112,7 +112,6 @@ For questions about crewAI:
 
 Automated system for converting Government Exam questions (SSC, Banking, Railways, Defence) into visual explanations with consistent design.
 
-### There is need to fix more things for work properly , i try my best in this assisment i hope you liked my work , because of the deadline
 
 ### Overview
 
@@ -487,4 +486,5 @@ Output:
   - Advanced AI models (GPT/Claude integration)
   - Interactive visual templates
   - Web interface for easy access
+
   - Database integration for question banks
